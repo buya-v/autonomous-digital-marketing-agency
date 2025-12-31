@@ -3,31 +3,26 @@
 @tailwind utilities;
 
 :root {
-  --brand-primary: #6366F1;
-  --brand-secondary: #8B5CF6;
-  --bg-main: #0F172A;
-  --surface-card: #1E293B;
-  --text-primary: #F8FAFC;
+  color-scheme: dark;
 }
 
 body {
-  background-color: var(--bg-main);
-  color: var(--text-primary);
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
+  background-color: #0F172A;
+  color: #F8FAFC;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
-/* Custom Scrollbar for dashboard feel */
-::-webkit-scrollbar {
+/* Scrollbar styling for execution logs */
+.custom-scrollbar::-webkit-scrollbar {
   width: 8px;
 }
-::-webkit-scrollbar-track {
-  background: #0f172a;
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1E293B;
 }
-::-webkit-scrollbar-thumb {
-  background: #334155;
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #475569;
   border-radius: 4px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748B;
 }

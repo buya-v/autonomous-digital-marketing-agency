@@ -7,18 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand: {
-          primary: '#6366F1', // Indigo 500
-          secondary: '#8B5CF6', // Violet 500
+        slate: {
+          800: '#1E293B',
+          900: '#0F172A',
         },
-        bg: {
-          main: '#0F172A', // Slate 950
-          surface: '#1E293B', // Slate 800
+        blue: {
+          600: '#2563EB',
+        },
+        red: {
+          600: '#DC2626',
+        },
+        emerald: {
+          500: '#10B981',
+        },
+        amber: {
+          500: '#F59E0B',
         }
-      },
-      fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        mono: ['Geist Mono', 'monospace'],
       }
     },
   },
