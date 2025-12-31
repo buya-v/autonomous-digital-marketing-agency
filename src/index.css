@@ -2,17 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  body {
-    @apply bg-surface text-slate-900 font-sans antialiased;
-  }
+:root {
+  --brand-primary: #2563EB;
+  --brand-success: #10B981;
+  --brand-error: #EF4444;
+  --bg-main: #0F172A;
+  --font-main: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
 }
 
-/* Custom scrollbar for log feed */
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: #F8FAFC;
 }
-.scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+.mono-font {
+  font-family: var(--font-mono);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1E293B;
+}
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #64748B;
 }
